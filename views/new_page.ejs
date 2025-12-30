@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Blog</title>
+</head>
+
+<body class="bg-light">
+    <%- include("partials/header.ejs") %>
+        <!-- Page Container -->
+        <div class="container py-5">
+
+            <!-- Page Title -->
+            <div class="text-center mb-5">
+                <h1 class="fw-bold">Create New Blog</h1>
+                <p class="text-muted">Add your blog content below</p>
+            </div>
+
+            <!-- Blog Form Card -->
+            <div class="card shadow-sm">
+                <div class="card-body p-4">
+
+                    <form action="/new/submit" method="post" enctype="multipart/form-data">
+                        <!-- Blog Image -->
+                        <div class="mb-4">
+                            <label class="form-label fw-semibold">Blog Cover Image</label>
+                            <input type="file" name="blogImage"class="form-control" required="true">
+                        </div>
+
+                        <!-- Blog Title -->
+                        <div class="mb-4">
+                            <label class="form-label fw-semibold">Blog Title</label>
+                            <input type="text" class="form-control" name="blogTitle" placeholder="Enter blog title" required="true">
+                        </div>
+
+                        <!-- Blog Description -->
+                        <div class="mb-4">
+                            <label class="form-label fw-semibold">Short Description</label>
+                            <textarea class="form-control" rows="3" name="blogDescription" placeholder="Enter a short description" required="true"></textarea>
+                        </div>
+
+                        <!-- Blog Content -->
+                        <div class="mb-4">
+                            <label class="form-label fw-semibold">Write your content here</label>
+                            <textarea class="form-control" rows="10" name="blogContent"
+                                placeholder="Start writing your blog content..." required="true"></textarea>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="d-flex justify-content-end gap-2">
+                            <button class="btn btn-outline-secondary" type="reset">
+                                Reset
+                            </button>
+                            <button class="btn btn-primary" type="submit">
+                                Publish Blog
+                            </button>
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+
+        </div>
+
+</body>
+
+<%- include("partials/footer.ejs") %>
+
+</html>

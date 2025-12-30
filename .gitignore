@@ -1,0 +1,5 @@
+node_modules/
+
+# Uploads & generated content (choose based on your app)
+public/data/uploads/
+public/data/content/

@@ -1,0 +1,22 @@
+{
+  "name": "section_26_capstone_project_blog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^2.2.1",
+    "bootstrap": "^5.3.8",
+    "ejs": "^3.1.10",
+    "express": "^5.2.1",
+    "line-reader": "^0.4.0",
+    "multer": "^2.0.2",
+    "read-last-lines": "^1.8.0"
+  }
+}
